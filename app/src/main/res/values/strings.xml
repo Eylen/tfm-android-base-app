@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SensorManager</string>
+
+    <string name="title_section1">Camera</string>
+    <string name="title_section2">Sensors</string>
+    <string name="title_section3">Location</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sm_accelerometer">Accelerometer</string>
+    <string name="sm_x">X: </string>
+    <string name="sm_y">Y: </string>
+    <string name="sm_z">Z: </string>
+    <string name="sm_gyroscope">Gyroscope</string>
+    <string name="sm_gravity">Gravity</string>
+    <string name="sm_last_location">Last known location</string>
+    <string name="sm_longitude">Longitude</string>
+    <string name="sm_latitude">Latitude</string>
+    <string name="sm_current_location">Current location</string>
+    <string name="sm_toggle_location_updates">Toggle Location Updates</string>
+    <string name="sm_last_timestamp">Last location update</string>
+    <string name="sm_image_url">Url to captured image</string>
+    <string name="sm_take_picture">Take picture</string>
+</resources>
