@@ -15,54 +15,69 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         style="@style/CardViewStyle">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sm_accelerometer"
-        android:id="@+id/accelerometer_label"
-        style="@style/TitleTextStyle" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:orientation="horizontal">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sm_accelerometer"
+                android:id="@+id/accelerometer_label"
+                style="@style/TitleTextStyle" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sm_x"
-            android:id="@+id/accelerometer_x_label" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:id="@+id/accelerometer_x" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sm_x"
+                    android:id="@+id/accelerometer_x_label"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:theme="@style/CardLabelStyle"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sm_y"
-            android:id="@+id/accelerometer_y_label" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/accelerometer_x"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:id="@+id/accelerometer_y" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sm_y"
+                    android:id="@+id/accelerometer_y_label"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" android:theme="@style/CardLabelStyle" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sm_z"
-            android:id="@+id/accelerometer_z_label" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/accelerometer_y"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:id="@+id/accelerometer_z" />
-    </LinearLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sm_z"
+                    android:id="@+id/accelerometer_z_label"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" android:theme="@style/CardLabelStyle" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/accelerometer_z"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
             </LinearLayout>
+
+        </LinearLayout>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -71,7 +86,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        style="@style/CardViewStyle">
+        style="@style/CardViewStyle"
+        android:visibility="gone">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
@@ -129,53 +145,65 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         style="@style/CardViewStyle">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sm_gyroscope"
-        android:id="@+id/gyroscope_label"
-        style="@style/TitleTextStyle" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:orientation="horizontal">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sm_gyroscope"
+                android:id="@+id/gyroscope_label"
+                style="@style/TitleTextStyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sm_x"
-            android:id="@+id/gyroscope_x_label" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sm_x"
+                    android:id="@+id/gyroscope_x_label"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" android:theme="@style/CardLabelStyle"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:id="@+id/gyroscope_x" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/gyroscope_x"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sm_y"
-            android:id="@+id/gyroscope_y_label" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sm_y"
+                    android:id="@+id/gyroscope_y_label"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" android:theme="@style/CardLabelStyle" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:id="@+id/gyroscope_y" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/gyroscope_y"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sm_z"
-            android:id="@+id/gyroscope_z_label" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sm_z"
+                    android:id="@+id/gyroscope_z_label"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" android:theme="@style/CardLabelStyle" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:id="@+id/gyroscope_z" />
-    </LinearLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/gyroscope_z"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
             </LinearLayout>
+        </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

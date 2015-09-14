@@ -119,7 +119,7 @@ public class LocationFragment extends PlaceholderFragment implements
         if (mLocationRequest == null) {
             createLocationRequest();
         }
-        if (mGoogleApiClient.isConnected() && !mRequestingLocationUpdates) {
+        if (mGoogleApiClient!= null && mGoogleApiClient.isConnected() && !mRequestingLocationUpdates) {
             LocationServices.FusedLocationApi.requestLocationUpdates(
                     mGoogleApiClient, mLocationRequest, this);
             mRequestingLocationUpdates = true;
